@@ -115,7 +115,7 @@ program co-chairs no later than 30 days before the conference.-->
   <!-- <A HREF="https://rtcsa2021.github.io/index/?page=keynotes.html#kn1">The verified seL4 microkernel – a high-assurance foundation for mixed-criticality systems</A> -->
               </P></TD>
             <TD width="200" height="120" style="background: rgb(240, 223, 207); border: 1pt solid windowtext; border-image: none;">
-              <P align="center"><A href="#livekeynote2"><U>Live Keynote 2 <BR>Prof. Youjip Won</U></A>
+              <P align="center"><A href="#livekeynote2"><U>Live Keynote 2:<BR> On the ordering guarantee in the modern storage stack <BR>Prof. Youjip Won</U></A>
   <!-- <A HREF="https://rtcsa2021.github.io/index/?page=keynotes.html#kn1">The verified seL4 microkernel – a high-assurance foundation for mixed-criticality systems</A> -->
               </P></TD>
             </TR>
@@ -290,10 +290,10 @@ program co-chairs no later than 30 days before the conference.-->
 <H2 id=livekeynote2>Live Keynote 2 (09:00 ~ 10:00 UTC+8)</H2>
 <HR>
 <img style="width: 150px; height: 180px;" src="prof_Youjip_Won.jpg" align="right"/>
-<P style="font-size: 15px;"><B>Title: </B>TBA</P>
+<P style="font-size: 15px;"><B>Title: </B>On the ordering guarantee in the modern storage stack</P>
 <P style="font-size: 15px;"><B>Speaker: </B>Youjip Won, Professor, Korea Advanced Institute of Science and Technology (KAIST)</P>
-<P style="font-size: 15px;"><B>Abstract: </B>TBA</P>
-<P style="font-size: 15px;"><B>Biography: </B>TBA</P>
+<P style="font-size: 15px;"><B>Abstract: </B>In this talk, we will review the ordering guarantee issue in the modern IO stack. Modern IO stack assumes that all IO requests are independent with each other. each of the block device layer, storage controller, writeback cache manager employs its own scheduler to meet the requirement from the application such as maximizing the throughput or minimizing the latency, or QoS guarantee. Modern softwares such as DBMS, key-value engine, mail server and the filesystem require that a set of write requests are made durable with respect to a certain order. This is called ordering guarantee. Existing software stack does not provide separate API’s for guaranteeing the order in which a set of writes are made durable. Instead, we have been using durability guarantee API’s, e.g. fdatasync/fsync to ensure the ordering guarantee. We will examine the reason why the modern IO stack have failed to separate the ordering guarantee from the durability guarantee, how we can separate the ordering guarantee from the durability guarantee in the modern IO stack, and what are the technical challenges in it. Lastly, we will see the possible benefits of providing the separate ordering guarantee in the modern IO stack.</P>
+<P style="font-size: 15px;"><B>Biography: </B>He is ICT Endowed Chair Professor at School of Electrical Engineering, KAIST. He did his BS and MS in Dept. of Computer Science, Seoul National University, Seoul, Korea in 1990 and 1992, respectively. He received his Ph. D in Computer Science from University of Minnesota in 1997. From 1999 till 2019, he was with Dept. of Computer Science, Hanyang University, Seoul, Korea. He was a dept. head and a director of Center for File and Storage Systems Technology (CFSR) at Hanyang University. He was awarded “Outstanding Researcher Award”, Hanyang University(2016) and “Gaheon Outstanding Research Award” from Korean Institute of Information Scientists and Engineers (KIISE)(2017). Funded by Samsung Electronics, he developed Namsan Filesystem. With Namsan Filesystem, he was awarded  “Best Academy-Industry Collaboration Practice in Samsung Electronics” in 2006. Namsan Filesystem was deployed in the commercial TV products. His work on IO stack optimization in Android platform identified the root cause of the IO inefficiencies in the Android smartphones (USENIX ATC 2013, best paper award). His work on IO stack design on the Flash Storage proposes a new way of designing the filesystem, block layer and device formware for the Flash storage (USENIX FAST 2018, best paper award). He is known for his work on the Android IO stack optimization, filesystem and block layer design for SSD and NVRAM. His research interests include Operating System, Distributed System, Storage System and Software support for byte-addressable NVRAM.</P>
 <P style="font-size: 15px;"><B>Moderator: </B>Ming-Chang Yang (The Chinese University of Hong Kong)</P>
 	
 <H2 id=session4>Session 4: Hybrid Memory (10:30 ~ 12:00 UTC+8)</H2>
